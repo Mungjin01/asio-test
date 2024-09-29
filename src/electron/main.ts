@@ -7,7 +7,7 @@ let mainWindow;
 app.on("ready", () => {
   mainWindow = new BrowserWindow({
     webPreferences: {
-      preload: path.join(__dirname, "preload.js"), // preload 스크립트 로드
+      preload: path.join(__dirname, "preload.ts"), // preload 스크립트 로드
       nodeIntegration: false,
       contextIsolation: true,
     },
